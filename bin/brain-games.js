@@ -1,11 +1,10 @@
 import greet from '../src/cli.js';
-import brainCalc from './games/brain-calc.js';
+import brainGcd from './games/brain-gcd.js';
 
 function brainGames() {
   console.log('Welcome to the Brain Games!');
   const name = greet();
-
-  brainCalc(name, 3);
+  brainGcd(name, 3);
 }
 
 brainGames();

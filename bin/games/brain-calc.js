@@ -41,6 +41,6 @@ Let's try again, ${username}!`);
     }
   }
 
-  if (score === 3) console.log(`Congratulations, ${username}`);
+  if (score === rounds) console.log(`Congratulations, ${username}`);
   return true;
 }

@@ -8,3 +8,6 @@ https://asciinema.org/a/G5XlZQa89zWGtsPW1nn1gA1Iv
 
 Пример с игрой в калькулятор
 https://asciinema.org/a/BI1BmPZBV6U3F85AWCtIhgvNE
+
+Пример с игрой в наибольший делитель
+https://asciinema.org/a/jbMrFVLy8EOKHmzBZz97aWwzv
