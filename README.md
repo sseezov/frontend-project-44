@@ -14,3 +14,6 @@ https://asciinema.org/a/jbMrFVLy8EOKHmzBZz97aWwzv
 
 Пример с игрой в геометрическую прогрессию
 https://asciinema.org/a/fTgjzNixeIuIN3n5uYQdxVJa8
+
+Пример с игрой в простое число
+https://asciinema.org/a/8O0YkXv0jmO3EZzBPf3ZzLFha
