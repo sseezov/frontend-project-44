@@ -11,3 +11,6 @@ https://asciinema.org/a/BI1BmPZBV6U3F85AWCtIhgvNE
 
 Пример с игрой в наибольший делитель
 https://asciinema.org/a/jbMrFVLy8EOKHmzBZz97aWwzv
+
+Пример с игрой в геометрическую прогрессию
+https://asciinema.org/a/fTgjzNixeIuIN3n5uYQdxVJa8
