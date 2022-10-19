@@ -34,6 +34,6 @@ export default function brainGcd(username = 'username', rounds = 3) {
     }
   }
 
-  if (score === rounds) console.log(`Congratulations, ${username}`);
+  if (score === rounds) console.log(`Congratulations, ${username}!`);
   return true;
 }
