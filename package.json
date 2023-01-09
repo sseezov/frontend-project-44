@@ -19,18 +19,18 @@
     "type": "git",
     "url": "git+https://github.com/sseezov/frontend-project-44.git"
   },
-  "author": "",
+  "author": "sseezov@mail.ru",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sseezov/frontend-project-44/issues"
   },
   "homepage": "https://github.com/sseezov/frontend-project-44#readme",
   "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint": "^8.23.1"
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
