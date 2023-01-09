@@ -1,3 +1,12 @@
+Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли.
+
+Для запуска игры "калькулятор" введите команду make brain-calc;
+Для запуска игры "четное-нечетное" введите команду make brain-even;
+Для запуска игры "найди наибольший делитель" введите команду make brain-gcd;
+Для запуска игры "геометрическая прогрессия" введите команду make brain-progression;
+Для запуска игры "простое число" введите команду make brain-prime;
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/sseezov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/sseezov/frontend-project-44/actions)
 
