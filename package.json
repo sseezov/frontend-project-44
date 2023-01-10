@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/sseezov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/sseezov/frontend-project-44/actions)",
+  "description": "first project in Hexlet frontend course",
   "main": "./bin/brain-games.js",
   "type": "module",
   "bin": {
