@@ -1,7 +1,10 @@
-Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли.
+<h2>Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли.</h2>
 
-Установка:
-Откройте папку, в которой хотите разместить приложение. Откройте git bash и введите: git clone https://github.com/sseezov/frontend-project-44.git
+<b>Установка:</b>
+Откройте папку, в которой хотите разместить приложение. Откройте git bash и введите: 
+```sh
+git clone https://github.com/sseezov/frontend-project-44.git
+```
 
 Запуск:
 Для запуска приветствия введите команду make brain-games;
@@ -22,17 +25,17 @@
 
 <a href="https://codeclimate.com/github/sseezov/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/51470fbe59caa902aa6f/maintainability" /></a>
 
-Пример с игрой в четное-нечетное
+Пример с игрой в четное-нечетное:
 https://asciinema.org/a/G5XlZQa89zWGtsPW1nn1gA1Iv
 
-Пример с игрой в калькулятор
+Пример с игрой в калькулятор:
 https://asciinema.org/a/BI1BmPZBV6U3F85AWCtIhgvNE
 
-Пример с игрой в наибольший делитель
+Пример с игрой в наибольший делитель:
 https://asciinema.org/a/jbMrFVLy8EOKHmzBZz97aWwzv
 
-Пример с игрой в геометрическую прогрессию
+Пример с игрой в геометрическую прогрессию:
 https://asciinema.org/a/fTgjzNixeIuIN3n5uYQdxVJa8
 
-Пример с игрой в простое число
+Пример с игрой в простое число:
 https://asciinema.org/a/8O0YkXv0jmO3EZzBPf3ZzLFha
