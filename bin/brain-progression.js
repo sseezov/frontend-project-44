@@ -1,7 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin / env node
 
-import brainProgression from '../src/games/progression.js';
-import greet from '../src/cli.js';
+import runProgressionGame from '../src/games/progression.js';
 
-const name = greet();
-brainProgression(name);
+runProgressionGame();

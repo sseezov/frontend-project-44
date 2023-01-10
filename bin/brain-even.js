@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import brainEven from '../src/games/even.js';
-import greet from '../src/cli.js';
+import runEvenGame from '../src/games/even.js';
 
-const name = greet();
-brainEven(name);
+runEvenGame();

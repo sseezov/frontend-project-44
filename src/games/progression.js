@@ -1,36 +1,29 @@
-import { question } from 'readline-sync';
+import getRandomNumber from '../getRandomNumber.js';
+import engine, { roundCount } from '../engine.js';
 
-export default function brainProgression(username = 'username', rounds = 3) {
-  let score = 0;
-  while (score < rounds) {
-    let randomNumber = Math.round(Math.random() * 20);
-    const randomIncrement = Math.round(Math.random() * 10);
-    const randomSolution = Math.round(Math.random() * 10);
-    const randomArray = [randomNumber];
-    const setRandomArray = () => {
-      while (randomArray.length < 10) {
-        randomArray.push(randomNumber += randomIncrement);
-      }
-    };
-    setRandomArray();
-    const correctAnswer = randomArray[randomSolution];
-    randomArray[randomSolution] = '..';
-    const printArray = randomArray.join(' ');
+const description = 'What number is missing in the progression?';
+const progressionLength = 10;
 
-    const answer = question(`What number is missing in the progression?
-Question: ${printArray}
-`);
-    console.log(`Your answer: ${answer}`);
-    if (Number(answer) === correctAnswer) {
-      score += 1;
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${username}!`);
-      score = 0;
-      break;
-    }
+const generateRound = () => {
+  const step = getRandomNumber(1, 100);
+  const resultProgression = [];
+  const startNum = getRandomNumber(1, 1000);
+  for (let i = 1; i <= progressionLength; i += 1) {
+    resultProgression.push(startNum + i * step);
   }
+  const hiddenIndex = getRandomNumber(0, progressionLength - 1);
+  const correctAnswer = String(resultProgression[hiddenIndex]);
+  resultProgression[hiddenIndex] = '..';
+  const question = resultProgression.join(' ');
+  return [question, correctAnswer];
+};
 
-  if (score === 3) console.log(`Congratulations, ${username}!`);
-}
+const runProgressionGame = () => {
+  const rounds = [];
+  for (let i = 0; i < roundCount; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return engine(rounds, description);
+};
+
+export default runProgressionGame;

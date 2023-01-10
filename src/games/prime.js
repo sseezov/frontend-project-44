@@ -1,30 +1,32 @@
-import { question } from 'readline-sync';
+import getRandomNumber from '../getRandomNumber.js';
+import engine, { roundCount } from '../engine.js';
 
-export default function brainPrime(username = 'username', rounds = 3) {
-  let score = 0;
-  const isPrime = (num) => {
-    for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
-      if (num % i === 0) return false;
-    }
-    return num > 1;
-  };
-  while (score < rounds) {
-    const randomNumber = Math.round(Math.random() * 1000);
-    const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-    const answer = question(`Answer "yes" if given number is prime. Otherwise answer "no".
-Question: ${randomNumber}
-`);
-    console.log(`Your answer: ${answer}`);
-    if (answer === correctAnswer) {
-      score += 1;
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${username}!`);
-      score = 0;
-      break;
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
   }
+  return true;
+};
 
-  if (score === 3) console.log(`Congratulations, ${username}!`);
-}
+const generateRound = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = isPrime(question) === true ? 'yes' : 'no';
+  return [question, correctAnswer];
+};
+
+const runPrimeGame = () => {
+  const rounds = [];
+  for (let i = 0; i < roundCount; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return engine(rounds, description);
+};
+
+export default runPrimeGame;

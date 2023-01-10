@@ -1,39 +1,29 @@
-import { question } from 'readline-sync';
+import getRandomNumber from '../getRandomNumber.js';
+import engine, { roundCount } from '../engine.js';
 
-export default function brainGcd(username = 'username', rounds = 3) {
-  let score = 0;
+const description = 'Find the greatest common divisor of given numbers.';
 
-  const getRandomNumber = () => Math.floor(Math.random() * 100);
-
-  console.log('Find the greatest common divisor of given numbers.');
-
-  while (score < rounds) {
-    const num1 = getRandomNumber();
-    const num2 = getRandomNumber();
-    const gcd = function (a, b) {
-      if (!b) {
-        return a;
-      }
-      return gcd(b, a % b);
-    };
-
-    const answer = question(`Question: ${num1} ${num2}
-`);
-
-    const result = gcd(num2, num1);
-    console.log(`Your answer: ${answer}`);
-
-    if (Number(answer) === result) {
-      console.log('Correct!');
-      score += 1;
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'
-    Let's try again, ${username}!`);
-      score = 0;
-      return false;
-    }
+const getGcd = (num1, num2) => {
+  if (num1 === 0) {
+    return num2;
   }
+  return getGcd(num2 % num1, num1);
+};
 
-  if (score === rounds) console.log(`Congratulations, ${username}!`);
-  return true;
-}
+const generateRound = () => {
+  const firstNumber = getRandomNumber(1, 100);
+  const secondNumber = getRandomNumber(1, 100);
+  const correctAnswer = String(getGcd(firstNumber, secondNumber));
+  const question = `${firstNumber} ${secondNumber}`;
+  return [question, correctAnswer];
+};
+
+const runGcdGame = () => {
+  const rounds = [];
+  for (let i = 0; i < roundCount; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return engine(rounds, description);
+};
+
+export default runGcdGame;
