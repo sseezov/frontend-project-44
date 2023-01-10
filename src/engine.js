@@ -20,5 +20,5 @@ export default function engine(rounds, description) {
       return;
     }
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 }
