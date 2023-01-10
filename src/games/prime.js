@@ -1,7 +1,4 @@
 import getRandomNumber from '../getRandomNumber.js';
-import engine, { roundCount } from '../engine.js';
-
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -15,18 +12,8 @@ const isPrime = (number) => {
   return true;
 };
 
-const generateRound = () => {
+export default function generateRound() {
   const question = getRandomNumber(1, 100);
   const correctAnswer = isPrime(question) === true ? 'yes' : 'no';
   return [question, correctAnswer];
-};
-
-const runPrimeGame = () => {
-  const rounds = [];
-  for (let i = 0; i < roundCount; i += 1) {
-    rounds[i] = generateRound();
-  }
-  return engine(rounds, description);
-};
-
-export default runPrimeGame;
+}

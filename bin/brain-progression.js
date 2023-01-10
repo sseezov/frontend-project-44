@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import runProgressionGame from '../src/games/progression.js';
+import generateRound from '../src/games/progression.js';
+import gameRunner from '../src/gameRunner.js';
 
-runProgressionGame();
+gameRunner('What number is missing in the progression?', generateRound);
