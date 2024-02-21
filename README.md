@@ -1,13 +1,13 @@
-# Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли
+## Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли
 
-## Установка:
+### Установка:
 ```bash
 git clone https://github.com/sseezov/frontend-project-44.git
 cd frontend-project-44
 make install
 ```
 
-## Запуск:
+### Запуск:
 Для запуска приветствия введите команду make brain-games;
 
 Для запуска игры "калькулятор" введите команду make brain-calc;
@@ -24,7 +24,7 @@ make install
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/sseezov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/sseezov/frontend-project-44/actions)
 
-<a href="https://codeclimate.com/github/sseezov/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/51470fbe59caa902aa6f/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/21aa19ce9cb07c0c395b/maintainability)](https://codeclimate.com/github/sseezov/frontend-project-44/maintainability)
 
 Пример с игрой в четное-нечетное:
 https://asciinema.org/a/G5XlZQa89zWGtsPW1nn1gA1Iv
