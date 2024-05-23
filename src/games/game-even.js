@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { generateInteger, isEven } from './helpers.js';
+import { generateInteger, isEven } from '../helpers.js';
 
 export default () => {
   console.log('Welcome to the Brain Games!');
