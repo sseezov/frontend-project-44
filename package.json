@@ -1,8 +1,8 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "first project in Hexlet frontend course",
-  "main": "./bin/brain-games.js",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -15,22 +15,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sseezov/frontend-project-44.git"
-  },
-  "author": "sseezov@mail.ru",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sseezov/frontend-project-44/issues"
-  },
-  "homepage": "https://github.com/sseezov/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint": "^8.23.1",
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "@jest/globals": "^29.7.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.0.0"
   }
 }
