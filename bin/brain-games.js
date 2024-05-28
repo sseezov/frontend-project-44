@@ -1,6 +1,18 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import { Command } from 'commander';
+import engine from '../src/engine.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${userName}!`);
+const program = new Command();
+
+program
+  .name('brain-games')
+  .description('Set of games, written in js')
+  .version('1.0.0')
+  .argument('<game>', 'name of the game')
+  .option('-r, --rounds [count]', 'number of game rounds', '3')
+  .action((game) => {
+    const { rounds } = program.opts();
+    engine(game, rounds);
+  });
+
+program.parse();
