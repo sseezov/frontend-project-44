@@ -1,27 +1,40 @@
 ## Игры разума
+
 ### Первый проект в программе фронтенд-разработчик на Хекслет. Он представляет собой набор игр, которые запускаются в консоли
 
-### Установка:
+### Установка
+
 ```bash
 git clone https://github.com/sseezov/frontend-project-44.git
 cd frontend-project-44
 make install
 ```
 
-### Запуск:
-Для запуска приветствия введите команду make brain-games;
+### Запуск
 
-Для запуска игры "калькулятор" введите команду make brain-calc;
+Для запуска игры введите команду
 
-Для запуска игры "четное-нечетное" введите команду make brain-even;
+```bash
+brain-games <name>
+```
 
-Для запуска игры "найди наибольший делитель" введите команду make brain-gcd;
+Здесь `<name>` это имя игры из списка:
+  *"calc"* - игра в калькулятор;
+  *"even"* - игра в четное-нечетное;
+  *"gcd"* - игра в поиск наибольшего общего делителя;
+  *"progression"* - игра в поиск неизвестного числа в рамках арифметической прогрессии;
+  *"prime"* - игра в простое число;
 
-Для запуска игры "геометрическая прогрессия" введите команду make brain-progression;
+Игра принимает флаг -r для количества раундов. Например:
 
-Для запуска игры "простое число" введите команду make brain-prime;
+```bash
+brain-games even -r 1 # запустится игра в четное-нечетное, длиной 1 раунд
+```
 
-### Hexlet tests and linter status:
+Значение раундов по умолчанию равно 3.
+
+### Hexlet tests and linter status
+
 [![Actions Status](https://github.com/sseezov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/sseezov/frontend-project-44/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/21aa19ce9cb07c0c395b/maintainability)](https://codeclimate.com/github/sseezov/frontend-project-44/maintainability)
