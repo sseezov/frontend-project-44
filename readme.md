@@ -36,6 +36,4 @@ brain-games even -r 1 # запустится игра в четное-нечет
 
 Значение раундов по умолчанию равно 3.
 
-### Hexlet tests and linter status
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/21aa19ce9cb07c0c395b/maintainability)](https://codeclimate.com/github/sseezov/frontend-project-44/maintainability)
